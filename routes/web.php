@@ -11,7 +11,7 @@ Route::get('/', function () {
 
 Route::post('/payment/initiate', [PaymentController::class, 'initiatePayment']);
 
-Route::post('/payment/callback/{paymentMethod}', [PaymentController::class, 'handleCallback']);
+Route::post('/payment/callback/{paymentMethod}', [PaymentController::class, 'handleCallback']); //Most of the payment method use a callback 
 
 Route::any('/payment/success', [PaymentController::class, 'paymentSuccess'])->name('payment.success');
 Route::any('/payment/fail', [PaymentController::class, 'paymentFail'])->name('payment.fail');

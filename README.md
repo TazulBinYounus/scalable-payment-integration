@@ -2,7 +2,7 @@ Here is the improved version of your documentation with some fixes for clarity, 
 
 ---
 
-# Find Nearest Rider
+# Scalable Payment Integration
 
 A Laravel application for scalable payment integration
 

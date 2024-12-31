@@ -81,7 +81,7 @@ class PaymentController extends Controller
       'ship_city' => 'Dhaka',
       'ship_postcode' => '1212',
       'ship_country' => 'BD',
-      'value_a' => 'sslcommerz',
+      'value_a' => $request->payment_method,
     ];
   }
 }

@@ -9,6 +9,7 @@ class BkashPaymentGateway implements PaymentGatewayInterface
 {
   public function initiate(array $data): array
   {
+    //
     //its a dummy data,  You can implemet same as sslCommerz
     return [
       'status' => 'initiated',

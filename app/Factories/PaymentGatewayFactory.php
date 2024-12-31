@@ -2,8 +2,6 @@
 
 namespace App\Factories;
 
-// use App\Contracts\PaymentGatewayInterface;
-
 use App\Interfaces\PaymentGatewayInterface;
 use App\Services\PaymentGateways\SSLCommerzPaymentGateway;
 use App\Services\PaymentGateways\BkashPaymentGateway;

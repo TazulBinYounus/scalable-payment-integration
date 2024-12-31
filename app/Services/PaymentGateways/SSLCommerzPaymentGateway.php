@@ -2,8 +2,6 @@
 
 namespace App\Services\PaymentGateways;
 
-// use App\Contracts\PaymentGatewayInterface;
-
 use App\Interfaces\PaymentGatewayInterface;
 use App\Library\SslCommerz\SslCommerzNotification;
 

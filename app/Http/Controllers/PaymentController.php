@@ -11,7 +11,7 @@ class PaymentController extends Controller
   public function initiatePayment(InitiatePaymentRequest $request)
   {
     // Get the structured payment data
-    $paymentData = PaymentController::preparePaymentData($request);
+    $paymentData = $this->preparePaymentData($request);
 
     // Get the payment gateway instance
     $gateway = PaymentGatewayFactory::make($request->payment_method);
@@ -19,7 +19,6 @@ class PaymentController extends Controller
     // Initiate the payment with the prepared data
     $response = $gateway->initiate($paymentData);
 
-    // Return the response
     return response()->json($response);
   }
 
